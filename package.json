@@ -1,0 +1,17 @@
+{
+  "name": "@xrates/ltc-usd",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/xrates-ltc-usd",
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "got": "^8.0.3",
+    "standard": "^10.0.3"
+  }
+}
