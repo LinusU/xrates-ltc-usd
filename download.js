@@ -21,10 +21,10 @@ async function main (year) {
 
   const data = new Map()
 
-  $('#historical-data table tr.text-right').map((_, el) => {
+  $('.cmc-tab-historical-data table tbody tr').map((_, el) => {
     const date = $(el).children().eq(0).text()
-    const open = Number($(el).children().eq(1).attr('data-format-value'))
-    const close = Number($(el).children().eq(4).attr('data-format-value'))
+    const open = Number($(el).children().eq(1).text())
+    const close = Number($(el).children().eq(4).text())
 
     data.set(date, (open + close) / 2)
   })
